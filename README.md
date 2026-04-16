@@ -1,16 +1,108 @@
-# React + Vite
+# 🐾 Pokémon Explorer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that fetches and displays Pokémon data using the PokéAPI. The app implements lazy loading (pagination) and allows users to view detailed information about each Pokémon.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 📜 Fetch Pokémon list from API
+* 🔄 Lazy loading (20 Pokémon per request)
+* 🔍 Click on a Pokémon to view detailed information
+* ⚡ Fast and responsive UI
+* 🌐 API integration with PokéAPI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Vite)
+* React Router DOM
+* Axios
+* CSS / Basic Styling
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+│
+├── components/
+│   ├── PokemonCard.jsx
+│   ├── Loader.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── PokemonDetails.jsx
+│
+├── services/
+│   └── api.js
+│
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/pokemon-app.git
+cd pokemon-app
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Run the development server
+
+```
+npm run dev
+```
+
+App will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔗 API Used
+
+* https://pokeapi.co/
+
+---
+
+## 🧠 Approach
+
+* Used offset-based pagination to implement lazy loading.
+* Maintained state for Pokémon list and appended new data on each API call.
+* Implemented dynamic routing to navigate between list and detail views.
+* Separated concerns using components, pages, and services.
+
+---
+
+## ✨ Future Improvements
+
+* Infinite scrolling (auto load on scroll)
+* Search functionality
+* Better UI with Tailwind CSS
+* Loading skeletons
+* Error handling
+
+---
+
+## 📌 Author
+
+**Anil Kumar**
+
+---
+
+
