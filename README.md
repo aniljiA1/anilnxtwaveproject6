@@ -4,6 +4,11 @@ A React-based web application that fetches and displays Pokémon data using the 
 
 ---
 
+## Live Demo
+Live: https://anilnxtwaveproject6.vercel.app
+
+---
+
 ## 🚀 Features
 
 * 📜 Fetch Pokémon list from API
@@ -50,7 +55,7 @@ src/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/pokemon-app.git
+git clone https://github.com/aniljiA1/anilnxtwaveproject6.git
 cd pokemon-app
 ```
 
